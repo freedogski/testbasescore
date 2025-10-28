@@ -188,5 +188,24 @@ input[type="range"]::-moz-range-thumb{
   color:#0000ee;
   text-decoration:none;
 }
+#theme-toggle {
+  margin-left: 10px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 6px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text);
+  transition: background 0.15s ease;
+}
+
+#theme-toggle:hover {
+  background: #eaf1ff;
+}
+
+#theme-toggle:active {
+  background: #dce8ff;
+}
 
 </style>
