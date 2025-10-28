@@ -106,6 +106,21 @@
       }, 150);
       lastTotalText = text;
     }
+// -----------------------------
+// DARK/LIGHT MODE TOGGLE
+// -----------------------------
+const themeToggle = document.getElementById("theme-toggle");
+
+// Load saved theme from localStorage
+const savedTheme = localStorage.getItem("BaseScoreTheme");
+if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+
+themeToggle.addEventListener("click", () => {
+  const current = document.documentElement.dataset.theme;
+  const newTheme = current === "dark" ? "light" : "dark";
+  document.documentElement.dataset.theme = newTheme;
+  localStorage.setItem("BaseScoreTheme", newTheme);
+});
 
     saveBaseScore(totalValue); // optional: persist total
   }
