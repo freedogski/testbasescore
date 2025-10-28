@@ -1,4 +1,4 @@
-<script>
+// <script>
 (function(){
 const sliders=[
   {el:slider1,val:val1,range:range1,max:10},
@@ -132,4 +132,4 @@ document.querySelectorAll('.tick-container').forEach(tc=>{
 });
 update();
 })();
-</script>
+// </script>
